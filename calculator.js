@@ -24,6 +24,7 @@ const mathsButtons = document.querySelectorAll('.math-symbols button');
 const equals = document.querySelector('#equals');
 const clear = document.querySelector('#clear');
 const allClear = document.querySelector('#all-clear');
+const negPos = document.querySelector('#neg-pos');
 
 numButtons.forEach(num => num.addEventListener('click', (e) => current.textContent += e.target.id));
 
@@ -32,6 +33,8 @@ const decimalButton = document.querySelector('#decimal');
 decimalButton.addEventListener('click', function () {
     if (!current.textContent.includes('.')) current.textContent += '.';
 });
+
+negPos.addEventListener('click', () => current.textContent *= (-1));
 
 mathsButtons.forEach(symbol => symbol.addEventListener('click', function (e) {
     if (previous.textContent === '' && current.textContent !== '') {
