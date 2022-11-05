@@ -115,3 +115,7 @@ button {
     border: 1px solid black;
     margin: 2px;
 }
+
+.math-symbols button {
+    background-color: skyblue;
+}
