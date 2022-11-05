@@ -1,0 +1,88 @@
+body {
+    background-color: beige;
+}
+
+.calculator {
+    width: 368px;
+    height: 425px;
+    background-color: grey;
+    border: 2px solid black;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.display {
+    display: flex;
+    background-color: azure;
+    border: 1px solid black;
+    justify-content: flex-end;
+    width: 331px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.num {
+    display: flex;
+    flex-flow: wrap;
+    min-width: 200px;
+    justify-content: center;
+    flex: 0;
+    gap: 8px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex: 0;
+    justify-content: space-between;
+}
+
+.math-symbols {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.last {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 6px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#current {
+    font-size: 36px;
+    margin: 0px;
+}
+
+#previous, #compute {
+    margin: 0px;
+}
